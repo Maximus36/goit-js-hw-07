@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>js-hw-07</title>
+  </head>
+
+  <body>
+    <section class="task">
+      <h1 class="visually-hidden">Homework</h1>
+      <h2 class="task__title">Task 1</h2>
+      <ul id="categories" class="list">
+        <li class="item">
+          <h2>Животные</h2>
+
+          <ul class="list">
+            <li>Кот</li>
+            <li>Хомяк</li>
+            <li>Лошадь</li>
+            <li>Попугай</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Продукты</h2>
+
+          <ul class="list">
+            <li>Хлеб</li>
+            <li>Петрушка</li>
+            <li>Творог</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Технологии</h2>
+
+          <ul class="list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 2</h2>
+      <ul id="ingredients" class="list"></ul>
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 3</h2>
+      <ul id="gallery"></ul>
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 4</h2>
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 5</h2>
+      <input type="text" placeholder="Ваше имя?" id="name-input" />
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 6</h2>
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+      />
+      <br />
+    </section>
+    <section class="task">
+      <h2 class="task__title">Task 7</h2>
+      <input
+        id="font-size-control"
+        type="range"
+        min="16"
+        max="150"
+        value="16"
+      />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </section>
+    <script src="./js/Task1.js" type="module"></script>
+    <script src="./js/Task2.js" type="module"></script>
+    <script src="./js/Task3.js" type="module"></script>
+    <script src="./js/Task4.js" type="module"></script>
+    <script src="./js/Task5.js" type="module"></script>
+    <script src="./js/Task6.js" type="module"></script>
+    <script src="./js/Task7.js" type="module"></script>
+  </body>
+</html>
