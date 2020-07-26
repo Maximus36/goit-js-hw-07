@@ -6,18 +6,16 @@
 //если неправильное - красным.
 //Для добавления стилей, используй CSS-классы valid и invalid.
 
-const validationValue = document.querySelector('[id="validation-input"]');
-const dataLength = validationValue.getAttribute('data-length');
-const validation = () => {
-	const inputText = validationValue.value.trim();
-	if (inputText.length < dataLength) {
-		validationValue.classList.add('invalid');
-		validationValue.classList.remove('valid');
-		return;
-	} else {
-		validationValue.classList.add('valid');
-		validationValue.classList.remove('invalid');
-		return;
-	}
-};
-validationValue.addEventListener('change', validation);
+const inputRef = document.querySelector('#validation-input');
+
+inputRef.addEventListener('blur', handleInputBlur);
+inputRef.addEventListener('focus', handleInputFocus);
+
+function handleInputBlur(event) {
+	Number(event.target.getAttribute('data-length')) === event.target.value.length
+		? inputRef.classList.add('valid')
+		: inputRef.classList.add('invalid');
+}
+function handleInputFocus() {
+	inputRef.classList.remove('invalid', 'valid');
+}

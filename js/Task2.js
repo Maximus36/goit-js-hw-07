@@ -8,7 +8,7 @@ const ingredients = [ 'Картошка', 'Грибы', 'Чеснок', 'Пом�
 const unorderedList = document.querySelector('#ingredients');
 const arrayOfItems = [];
 const getList = (array) =>
-	array.forEach((item) => {
+	array.map((item) => {
 		const listItem = document.createElement('li');
 		listItem.textContent = item;
 		arrayOfItems.push(listItem);
